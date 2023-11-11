@@ -6,6 +6,7 @@
     <br />
     <asp:FileUpload ID="FileUpload1" runat="server" AllowMultiple="True" />
     <br />
+    <br />
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
     <br />

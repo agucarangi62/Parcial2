@@ -81,6 +81,9 @@ namespace Parcial2
                     }
                     cargarGrilla();
                 }
+            } else
+            {
+                Label1.Text = "Debe registrarse para cargar un archivo.";
             }
             
         }
