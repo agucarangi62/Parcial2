@@ -1,0 +1,23 @@
+Trabajo: 
+https://github.com/agucarangi62/Parcial1
+
+Scripts para la bd:
+
+CREATE TABLE Proveedores (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    razonSocial VARCHAR(150) not null,
+    cuit VARCHAR(11) not null
+);
+
+
+CREATE TABLE Compras (
+    	id INT PRIMARY KEY IDENTITY(1,1),
+	fecha DATE not null,
+	montoGravado DECIMAL(12,2) not null,
+    	iva DECIMAL (11,2) not null,
+	numeroFactura INT,
+	puntoVenta INT,
+	idProveedor INT,
+    FOREIGN KEY (idProveedor) REFERENCES Proveedores(id)
+);
+
